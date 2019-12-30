@@ -1,0 +1,4 @@
+Компиляция с потоками: g++ -pthread -c fileName.cpp   // результат: объектный файл с расширением .o
+Сборка с потоками: g++ -pthread -o fileName fileName.o // результат: исполняемый файл
+Компиляция: g++ -c -o file.o file.cpp
+Сборка: g++ -o app file.o file.o ...

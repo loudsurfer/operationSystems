@@ -1,0 +1,2 @@
+Компиляция: g++ -pthread -c fileName.cpp   // результат: объектный файл с расширением .o
+Сборка: g++ -pthread -o fileName fileName.o // результат: исполняемый файл
