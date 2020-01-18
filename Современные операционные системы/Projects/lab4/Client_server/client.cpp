@@ -35,8 +35,12 @@ while(1){
 
     char str[MAXLINE];
     strcpy(str, s.c_str());
-
+  
+//mkfifo именованый поток
+// EEXIST файл уже существует
     if (mkfifo(FIFO2, FILE_MODE) == EEXIST) cout << " \n Pipes is exists" << endl;
+  
+  //O_WRONLY флаг того что файл открыт только для записи
 
     writefd = open(FIFO2, O_WRONLY);
 
